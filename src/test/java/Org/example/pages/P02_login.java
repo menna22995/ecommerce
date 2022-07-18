@@ -33,27 +33,5 @@ public class P02_login {
 
 
 
-//    public WebElement step2(){
-//        WebElement step2= Hooks.driver.findElement(By.className("ico-login"));
-//        return step2;
-//    }
-//
-//    public WebElement inValidEmail(){
-//        WebElement inValidEmail=Hooks.driver.findElement(By.id("Email"));
-//        return inValidEmail;
-//    }
-//
-//    public WebElement inValidPassword(){
-//        WebElement inValidPassword=Hooks.driver.findElement(By.id("Password"));
-//        return inValidPassword;
-//    }
-//
-//    public WebElement pressLogin(){
-//        WebElement pressLogin=Hooks.driver.findElement(By.className("button-1"));
-//        return pressLogin;
-//    }
-//    public  WebElement faildLogin(){
-//        WebElement faildLogin=Hooks.driver.findElement(By.className("message-error"));
-//        return faildLogin;
-//    }
+
 }

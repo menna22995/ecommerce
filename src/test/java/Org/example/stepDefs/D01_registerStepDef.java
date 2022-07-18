@@ -56,7 +56,7 @@ reg.enterFirstName().sendKeys("automat");
     }
     @And("user enter email \"test@example.com\" field")
     public  void  Valid_Email(){
-        reg.enterEmail().sendKeys("new@example.com");
+        reg.enterEmail().sendKeys("Fainal@example.com");
 
     }
  @And("user fills Password field \"P@ssw0rd\"")

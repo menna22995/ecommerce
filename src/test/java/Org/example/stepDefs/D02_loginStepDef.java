@@ -22,13 +22,13 @@ public class D02_loginStepDef {
     @When("user login with \"valid\" \"test@example.com\"")
     public  void validEmail(){
 
-login.ValidEmail().sendKeys("test@example.com");
+login.ValidEmail().sendKeys("new@e.com");
     }
 
     @And("user login with \"P@ssw0rd\"")
     public  void  validPassword(){
 
-        login.ValidPassword().sendKeys("123456");
+        login.ValidPassword().sendKeys("P@ssw0rd");
     }
 
     @And("user press on login button")
@@ -48,31 +48,4 @@ login.ValidEmail().sendKeys("test@example.com");
 
 
 
-//    @Given("user go to login page")
-//    public void step2(){
-//        login.step2().click();
-//    }
-//
-//    @When("user login with \"invalid\" \"test@example.com\"")
-//    public  void invalidEmail(){
-//
-//        login.inValidEmail().sendKeys("uuu@example.com");
-//    }
-//
-//    @And("user login with \"P@ssw0rd\"")
-//    public  void  invalidPassword(){
-//
-//        login.inValidPassword().sendKeys("12345");
-//    }
-//
-//    @And("user login to the system successfully")
-//    public  void pressLogin(){
-//        login.pressLogin().click();
-//    }
-//  @Then("user could not login to the system")
-//    public  void faildLogin(){
-//      String expected="Login was unsuccessful. Please correct the errors and try again.";
-//       String actualmsg= login.faildLogin().getText();
-//       Assert.assertTrue(actualmsg.contains(expected));
-//  }
 }
