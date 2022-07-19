@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: Org.example.testRunners.Runners
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 53.339 s <<< FAILURE! - in Org.example.testRunners.Runners
+Org.example.testRunners.Runners.runScenario["user could login with valid email and password", "F02_Login | users could use login functionality to use their accounts"](1)  Time elapsed: 14.304 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "actualurl" is null
+	at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:46)
+	at ✽.user login to the system successfully(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F02_Login.feature:10)
+
+Org.example.testRunners.Runners.runScenario["F03=currencies | users could change currency in their accounts", "change currency"](2)  Time elapsed: 20.299 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Cannot locate option with value: Euro
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
+	at Org.example.pages.P03_homePage.changecurr(P03_homePage.java:39)
+	at Org.example.stepDefs.D03_currenciesStepDef.selectCurr(D03_currenciesStepDef.java:55)
+	at ✽.user select Euro currency(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F03_currencies.feature:10)
+

@@ -22,7 +22,7 @@ public class D02_loginStepDef {
     @When("user login with \"valid\" \"test@example.com\"")
     public  void validEmail(){
 
-login.ValidEmail().sendKeys("new@e.com");
+login.ValidEmail().sendKeys("neew@e.com");
     }
 
     @And("user login with \"P@ssw0rd\"")

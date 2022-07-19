@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import java.awt.desktop.SystemEventListener;
@@ -24,7 +25,7 @@ public class D03_currenciesStepDef {
 
         @When("user enter valid email")
     public void  enterValidEmail(){
-            home.enterValidEmail().sendKeys("new@e.com");
+            home.enterValidEmail().sendKeys("neew@e.com");
         }
 
         @And("user enter valid pass")
@@ -48,28 +49,36 @@ public class D03_currenciesStepDef {
 
         }
 
-        @Then("user elect Euro currency")
+        @Then("user select Euro currency")
     public  void selectCurr() throws InterruptedException {
-            String expected="€1032.00";
-            String option="Euro";
-            int count=0;
-Thread.sleep(2000);
-        List<WebElement> list=  Hooks.driver.findElements(By.xpath("//select[@id=\"customerCurrency\"]"));
-        for (WebElement i :list) {
-            String curOption = i.getText();
-            if (curOption.contains(option)) {
-                i.click();
-               count ++;
-                break;
-            }
-        }
-        if (count!=0){
-            System.out.println(option);
-        }
-          list.get(2).click();
 
-         String actual = Hooks.driver.findElement(By.className("price actual-price")).getText();
-            Assert.assertTrue(actual.contains(expected));
-    }
+            home.changecurr().click();
+
+            String actualval = "$1,200.00";
+            String expectedval = Hooks.driver.findElement(By.className("price actual-price")).getText();
+            Assert.assertTrue(actualval.contains(expectedval));
+
+        }
+        //    String expected="€1032.00";
+//            String option="Euro";
+//            int count=0;
+//Thread.sleep(2000);
+//        List<WebElement> list=  Hooks.driver.findElements(By.xpath("//select[@id=\"customerCurrency\"]"));
+//        for (WebElement i :list) {
+//            String curOption = i.getText();
+//            if (curOption.contains(option)) {
+//                i.click();
+//               count ++;
+////                break;
+//            }
+//        }
+//        if (count!=0){
+//            System.out.println(option);
+//        }
+//          list.get(2).click();
+//
+//         String actual = Hooks.driver.findElement(By.className("price actual-price")).getText();
+//            Assert.assertTrue(actual.contains(expected));
+//    }
 
     }

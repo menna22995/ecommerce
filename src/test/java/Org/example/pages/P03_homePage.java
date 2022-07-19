@@ -3,6 +3,7 @@ package Org.example.pages;
 import Org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -32,6 +33,13 @@ public class P03_homePage {
         return  gotoDropDown;
     }
 
+    public  WebElement changecurr(){
+        WebElement changecurr=Hooks.driver.findElement(By.id("customerCurrency"));
+        Select dropList= new Select(changecurr);
+        dropList.selectByValue("Euro");
+        return changecurr;
+
+    }
 
 
 }
