@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                29,
-                3,
-                0,
+                34,
+                7,
+                1,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 32) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 42) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 2,
-                3
+                7
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -154,7 +154,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                    2,
-                   3
+                   7
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>15 Aug 2022, 12:37</td>
+      <td>15 Aug 2022, 21:23</td>
     </tr>
   </tbody>
 </table>
@@ -325,7 +325,24 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_3200690404.html">F02_Login | users could use login functionality to use their accounts</a></td>
+        <td class="tagname"><a href="report-feature_2104547065.html">homeSliders</a></td>
+
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="10084101900">10.084</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_1_3200690404.html">F02_Login | users could use login functionality to use their accounts</a></td>
 
         <td      class="passed"    >4</td>
         <td      class="failed"    >1</td>
@@ -338,11 +355,11 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="16021655300">16.021</td>
+        <td class="duration" data-value="15645696200">15.645</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_1_4114589633.html">change currency</a></td>
+        <td class="tagname"><a href="report-feature_2_4114589633.html">change currency</a></td>
 
         <td      class="passed"    >5</td>
         <td      class="failed"    >1</td>
@@ -355,11 +372,11 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="13942452000">13.942</td>
+        <td class="duration" data-value="13626692800">13.626</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_2_1623837561.html">search feature</a></td>
+        <td class="tagname"><a href="report-feature_3_1623837561.html">search feature</a></td>
 
         <td      class="passed"    >3</td>
         <td      class="failed"    >1</td>
@@ -372,11 +389,62 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="13152040300">13.152</td>
+        <td class="duration" data-value="11016590700">11.016</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_3_4196209235.html">invalid_Login | users could use login functionality to use their accounts</a></td>
+        <td class="tagname"><a href="report-feature_4_2683050262.html">hover categories</a></td>
+
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="11016301000">11.016</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_5_1910957245.html">followUs feature</a></td>
+
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="10124285800">10.124</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_6_1343597714.html">Wishlist feature</a></td>
+
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="10096578000">10.096</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_7_4196209235.html">invalid_Login | users could use login functionality to use their accounts</a></td>
 
         <td      class="passed"    >5</td>
         <td >0</td>
@@ -389,11 +457,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3794271700">3.794</td>
+        <td class="duration" data-value="3596576800">3.596</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_4_3273566277.html">users could register with new accounts</a></td>
+        <td class="tagname"><a href="report-feature_8_3273566277.html">users could register with new accounts</a></td>
 
         <td      class="passed"    >12</td>
         <td >0</td>
@@ -406,7 +474,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6620438400">6.620</td>
+        <td class="duration" data-value="5045368800">5.045</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -414,33 +482,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>29</td>
-      <td>3</td>
+      <td>34</td>
+      <td>7</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>32</td>
+      <td>42</td>
 
       <td>2</td>
-      <td>3</td>
-      <td>5</td>
+      <td>7</td>
+      <td>9</td>
 
-      <td class="duration">53.530</td>
-      <td>5</td>
+      <td class="duration">1:30.252</td>
+      <td>9</td>
     </tr>
     <tr>
       <td></td>
-      <td>90.62%</td>
-      <td>9.38%</td>
-      <td>0.00%</td>
+      <td>80.95%</td>
+      <td>16.67%</td>
+      <td>2.38%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>40.00%</td>
-      <td>60.00%</td>
+      <td>22.22%</td>
+      <td>77.78%</td>
       <td></td>
       <td></td>
-      <td>40.00%</td>
+      <td>22.22%</td>
     </tr>
   </tfoot>
 </table>

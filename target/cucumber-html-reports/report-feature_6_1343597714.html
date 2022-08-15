@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Feature: F02_Login | users could use login functionality to use their accounts</title>
+<title>Cucumber Reports (no 1) - Feature: Wishlist feature</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>15 Aug 2022, 12:37</td>
+      <td>15 Aug 2022, 21:23</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">F02_Login | users could use login functionality to use their accounts</td>
-          <td      class="passed"    >4</td>
+          <td class="tagname">Wishlist feature</td>
+          <td      class="passed"    >1</td>
           <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">5</td>
+          <td class="total">3</td>
 
           <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="16021655300">16.021</td>
+          <td class="duration" data-value="10096578000">10.096</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -177,7 +177,7 @@ $(document).ready(function() {
 
 <div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">F02_Login | users could use login functionality to use their accounts</span>
+  <span class="name">Wishlist feature</span>
 
 
 </div>
@@ -195,14 +195,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">16.021</span>
+  <span class="lead-duration duration">10.096</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">user could login with valid email and password</span>
+  <span class="name">user can add item to wishlist</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -233,7 +233,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">14.360</span>
+  <span class="lead-duration duration">4.182</span>
 
           </div>
 
@@ -268,9 +268,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user go to login page</span>
+  <span class="name">user slecet product</span>
 
-  <span class="lead-duration duration">0.881</span>
+  <span class="lead-duration duration">0.055</span>
 
 </div>
 
@@ -293,92 +293,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
-  <span class="name">user login with &quot;valid&quot; &quot;test@example.com&quot;</span>
+  <span class="name">user goto product page then tab to wishlist button</span>
 
-  <span class="lead-duration duration">0.113</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user login with &quot;P@ssw0rd&quot;</span>
-
-  <span class="lead-duration duration">0.113</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user press on login button</span>
-
-  <span class="lead-duration duration">2.865</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user login to the system successfully</span>
-
-  <span class="lead-duration duration">12.047</span>
+  <span class="lead-duration duration">10.040</span>
 
 </div>
 
@@ -393,15 +312,15 @@ $(document).ready(function() {
           <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-account&quot;}
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-to\-wishlist\-button\-4&quot;}
   (Session info: chrome=104.0.5112.81)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4a783f46b0a9dce13cf9168f0b452fab, findElement {using=css selector, value=.ico\-account}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a783f46b0a9dce13cf9168f0b452fab
+Command: [5fe61ac9434c7e1d1045fe04048d9760, findElement {using=id, value=add-to-wishlist-button-4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55193}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55193/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fe61ac9434c7e1d1045fe04048d9760
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -413,22 +332,43 @@ Session ID: 4a783f46b0a9dce13cf9168f0b452fab
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:429)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:298)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at Org.example.pages.P02_login.successLogin(P02_login.java:30)
-	at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:45)
-	at &#10045;.user login to the system successfully(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F02_Login.feature:10)
+	at Org.example.pages.P03_homePage.tabtoadd(P03_homePage.java:98)
+	at Org.example.stepDefs.D08_WishlistStepDef.tabtoadd(D08_WishlistStepDef.java:18)
+	at &#10045;.user goto product page then tab to wishlist button(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F08_Wishlist.feature:5)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">massage added to wishlist will appear</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -466,7 +406,7 @@ Session ID: 4a783f46b0a9dce13cf9168f0b452fab
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.730</span>
+  <span class="lead-duration duration">2.210</span>
 
           </div>
 

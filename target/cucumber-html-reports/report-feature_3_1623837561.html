@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Feature: change currency</title>
+<title>Cucumber Reports (no 1) - Feature: search feature</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>15 Aug 2022, 12:37</td>
+      <td>15 Aug 2022, 21:23</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">change currency</td>
-          <td      class="passed"    >5</td>
+          <td class="tagname">search feature</td>
+          <td      class="passed"    >3</td>
           <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td class="total">4</td>
 
           <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="13942452000">13.942</td>
+          <td class="duration" data-value="11016590700">11.016</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -177,7 +177,7 @@ $(document).ready(function() {
 
 <div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">change currency</span>
+  <span class="name">search feature</span>
 
 
 </div>
@@ -195,14 +195,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">13.942</span>
+  <span class="lead-duration duration">11.016</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">F03=currencies | users could change currency in their accounts</span>
+  <span class="name">F04=search  | users could search using product name</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -233,7 +233,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">5.118</span>
+  <span class="lead-duration duration">2.393</span>
 
           </div>
 
@@ -268,9 +268,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user navigates login page</span>
+  <span class="name">user go to search filed</span>
 
-  <span class="lead-duration duration">0.887</span>
+  <span class="lead-duration duration">0.049</span>
 
 </div>
 
@@ -295,36 +295,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user enter valid email</span>
+  <span class="name">tab to write product name</span>
 
-  <span class="lead-duration duration">0.114</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter valid pass</span>
-
-  <span class="lead-duration duration">0.117</span>
+  <span class="lead-duration duration">0.031</span>
 
 </div>
 
@@ -349,36 +322,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enter login button</span>
+  <span class="name">user tab on search button</span>
 
-  <span class="lead-duration duration">2.662</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user go to dropdown list on the top left of home page</span>
-
-  <span class="lead-duration duration">0.076</span>
+  <span class="lead-duration duration">0.903</span>
 
 </div>
 
@@ -403,9 +349,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">user select Euro currency</span>
+  <span class="name">user go to the product</span>
 
-  <span class="lead-duration duration">10.082</span>
+  <span class="lead-duration duration">10.031</span>
 
 </div>
 
@@ -420,16 +366,32 @@ $(document).ready(function() {
           <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Euro
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;https://demo.nopcommerce.com/search?q=book&quot;}
+  (Session info: chrome=104.0.5112.81)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
-	at Org.example.pages.P03_homePage.changecurr(P03_homePage.java:39)
-	at Org.example.stepDefs.D03_currenciesStepDef.selectCurr(D03_currenciesStepDef.java:55)
-	at &#10045;.user select Euro currency(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F03_currencies.feature:10)
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [640ca5aad92ef9b00dc6688bd9cec03b, findElement {using=link text, value=https://demo.nopcommerce.com/search?q=book}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54904/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 640ca5aad92ef9b00dc6688bd9cec03b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Org.example.pages.P03_homePage.searchVal(P03_homePage.java:57)
+	at Org.example.stepDefs.D04_searchStepDef.searchVal(D04_searchStepDef.java:32)
+	at &#10045;.user go to the product(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F04_Search.feature:7)
 </pre>
       </div>
     </div>
@@ -471,7 +433,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.360</span>
+  <span class="lead-duration duration">2.209</span>
 
           </div>
 
