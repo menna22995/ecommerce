@@ -41,5 +41,22 @@ public class P03_homePage {
 
     }
 
+    public WebElement searchFiled() {
+        WebElement searchFiled = Hooks.driver.findElement(By.id("small-searchterms"));
+        return searchFiled;
+    }
 
+    public WebElement writeName() {
+        WebElement writeName = Hooks.driver.findElement(By.id("small-searchterms"));
+        return writeName;
+    }
+
+    public WebElement searchBTn() {
+        WebElement searchBtn = Hooks.driver.findElement(By.className("search-box-button"));
+        return searchBtn;
+    }
+    public WebElement searchVal() {
+        WebElement searchVal = Hooks.driver.findElement(By.linkText("https://demo.nopcommerce.com/search?q=book"));
+        return searchVal;
+    }
 }

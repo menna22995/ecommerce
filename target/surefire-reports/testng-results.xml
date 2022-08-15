@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-20T00:00:00 EET" name="Surefire suite" finished-at="2022-07-20T00:00:52 EET" duration-ms="52602">
+  <suite started-at="2022-08-15T12:35:31 EET" name="Surefire suite" finished-at="2022-08-15T12:37:10 EET" duration-ms="99024">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-07-20T00:00:00 EET" name="Surefire test" finished-at="2022-07-20T00:00:52 EET" duration-ms="52602">
+    <test started-at="2022-08-15T12:35:31 EET" name="Surefire test" finished-at="2022-08-15T12:37:10 EET" duration-ms="99024">
       <class name="Org.example.testRunners.Runners">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-07-20T00:00:00 EET" name="setUpClass" finished-at="2022-07-20T00:00:01 EET" duration-ms="774" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:35:31 EET" name="setUpClass" finished-at="2022-08-15T12:35:32 EET" duration-ms="985" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@527a8665]]>
+                <![CDATA[org.testng.TestRunner@da09250]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-07-20T00:00:01 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-20T00:00:15 EET" duration-ms="14299" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:35:32 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-15T12:36:05 EET" duration-ms="33253" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,21 +34,58 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "actualurl" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a783f46b0a9dce13cf9168f0b452fab, findElement {using=css selector, value=.ico\-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a783f46b0a9dce13cf9168f0b452fab]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "actualurl" is null
-at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:46)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a783f46b0a9dce13cf9168f0b452fab, findElement {using=css selector, value=.ico\-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a783f46b0a9dce13cf9168f0b452fab
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:429)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:298)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at Org.example.pages.P02_login.successLogin(P02_login.java:30)
+at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:45)
 at ✽.user login to the system successfully(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F02_Login.feature:10)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-07-20T00:00:15 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-20T00:00:35 EET" duration-ms="20289" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:36:05 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-15T12:36:27 EET" duration-ms="21477" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,14 +103,14 @@ at ✽.user login to the system successfully(file:///C:/Users/AA/Documents/NetBe
               <![CDATA[Cannot locate option with value: Euro
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Euro
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
 at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
@@ -86,7 +123,65 @@ at ✽.user select Euro currency(file:///C:/Users/AA/Documents/NetBeansProjects/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-07-20T00:00:35 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-20T00:00:45 EET" duration-ms="9499" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:36:27 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-15T12:36:46 EET" duration-ms="19459" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["F04=search  | users could search using product name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["search feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"https://demo.nopcommerce.com/search?q=book"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d62e6d611d53d00e0fdb753c143a610d, findElement {using=link text, value=https://demo.nopcommerce.com/search?q=book}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54228/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d62e6d611d53d00e0fdb753c143a610d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"https://demo.nopcommerce.com/search?q=book"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d62e6d611d53d00e0fdb753c143a610d, findElement {using=link text, value=https://demo.nopcommerce.com/search?q=book}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54228/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d62e6d611d53d00e0fdb753c143a610d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at Org.example.pages.P03_homePage.searchVal(P03_homePage.java:59)
+at Org.example.stepDefs.D04_searchStepDef.searchVal(D04_searchStepDef.java:31)
+at ✽.user go to the product(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F04_Search.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:36:46 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-15T12:36:57 EET" duration-ms="11472" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +197,7 @@ at ✽.user select Euro currency(file:///C:/Users/AA/Documents/NetBeansProjects/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-07-20T00:00:45 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-20T00:00:52 EET" duration-ms="7467" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:36:57 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-15T12:37:10 EET" duration-ms="12122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,52 +210,10 @@ at ✽.user select Euro currency(file:///C:/Users/AA/Documents/NetBeansProjects/
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57cb83e05cf0ce44d88d94d89a8d16dc, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53852/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 57cb83e05cf0ce44d88d94d89a8d16dc]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57cb83e05cf0ce44d88d94d89a8d16dc, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53852/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 57cb83e05cf0ce44d88d94d89a8d16dc
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at Org.example.pages.registration.enterEmail(registration.java:67)
-at Org.example.stepDefs.D01_registerStepDef.Valid_Email(D01_registerStepDef.java:59)
-at ✽.user enter email "test@example.com" field(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/f01-Register.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-07-20T00:00:52 EET" name="tearDownClass" finished-at="2022-07-20T00:00:52 EET" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Org.example.testRunners.Runners@769f71a9]" started-at="2022-08-15T12:37:10 EET" name="tearDownClass" finished-at="2022-08-15T12:37:10 EET" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

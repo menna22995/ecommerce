@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Feature: change currency</title>
+<title>Cucumber Reports (no 1) - Feature: users could register with new accounts</title>
 
 </head>
 <body>
@@ -128,20 +128,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">change currency</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >1</td>
+          <td class="tagname">users could register with new accounts</td>
+          <td      class="passed"    >12</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td >0</td>
+          <td class="total">12</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="13942452000">13.942</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="6620438400">6.620</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -175,9 +175,9 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">change currency</span>
+  <span class="name">users could register with new accounts</span>
 
 
 </div>
@@ -195,14 +195,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">13.942</span>
+  <span class="lead-duration duration">6.620</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">F03=currencies | users could change currency in their accounts</span>
+  <span class="name">new user could register with valid data successfully</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -211,7 +211,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -233,7 +233,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">5.118</span>
+  <span class="lead-duration duration">3.118</span>
 
           </div>
 
@@ -250,9 +250,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -262,15 +262,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user navigates login page</span>
+  <span class="name">user go to register page</span>
 
-  <span class="lead-duration duration">0.887</span>
+  <span class="lead-duration duration">0.953</span>
 
 </div>
 
@@ -295,36 +295,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user enter valid email</span>
+  <span class="name">user select gender type</span>
 
-  <span class="lead-duration duration">0.114</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter valid pass</span>
-
-  <span class="lead-duration duration">0.117</span>
+  <span class="lead-duration duration">0.097</span>
 
 </div>
 
@@ -349,9 +322,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enter login button</span>
+  <span class="name">user enter first name &quot;automation&quot;</span>
 
-  <span class="lead-duration duration">2.662</span>
+  <span class="lead-duration duration">0.196</span>
 
 </div>
 
@@ -376,9 +349,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">user go to dropdown list on the top left of home page</span>
+  <span class="name">user enter last name &quot;tester&quot;</span>
 
-  <span class="lead-duration duration">0.076</span>
+  <span class="lead-duration duration">0.196</span>
 
 </div>
 
@@ -401,11 +374,200 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter day of birth</span>
+
+  <span class="lead-duration duration">0.239</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter month of birth</span>
+
+  <span class="lead-duration duration">0.374</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter year of birth</span>
+
+  <span class="lead-duration duration">0.428</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter email &quot;test@example.com&quot; field</span>
+
+  <span class="lead-duration duration">0.204</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user fills Password field &quot;P@ssw0rd&quot;</span>
+
+  <span class="lead-duration duration">0.192</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user confirm passsword field&quot;P@ssw0rd&quot;</span>
+
+  <span class="lead-duration duration">0.185</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on register button</span>
+
+  <span class="lead-duration duration">1.513</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user select Euro currency</span>
+  <span class="name">success message is displayed</span>
 
-  <span class="lead-duration duration">10.082</span>
+  <span class="lead-duration duration">2.036</span>
 
 </div>
 
@@ -413,27 +575,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Euro
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
-	at Org.example.pages.P03_homePage.changecurr(P03_homePage.java:39)
-	at Org.example.stepDefs.D03_currenciesStepDef.selectCurr(D03_currenciesStepDef.java:55)
-	at &#10045;.user select Euro currency(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F03_currencies.feature:10)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -453,7 +594,7 @@ Driver info: driver.version: unknown
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -465,13 +606,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.360</span>
+  <span class="lead-duration duration">2.356</span>
 
           </div>
 

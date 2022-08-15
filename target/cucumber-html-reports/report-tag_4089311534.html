@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>20 Jul 2022, 00:00</td>
+      <td>15 Aug 2022, 12:37</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@smoke</td>
-          <td      class="passed"    >21</td>
+          <td      class="passed"    >29</td>
           <td      class="failed"    >3</td>
-          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">28</td>
+          <td >0</td>
+          <td class="total">32</td>
 
-          <td  class="passed"    >1</td>
+          <td  class="passed"    >2</td>
           <td  class="failed"    >3</td>
-          <td class="total">4</td>
+          <td class="total">5</td>
 
-          <td class="duration" data-value="27101901400">27.101</td>
+          <td class="duration" data-value="53530857700">53.530</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -183,7 +183,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.553</span>
+  <span class="lead-duration duration">16.021</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">5.170</span>
+  <span class="lead-duration duration">14.360</span>
 
           </div>
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user go to login page</span>
 
-  <span class="lead-duration duration">0.951</span>
+  <span class="lead-duration duration">0.881</span>
 
 </div>
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user login with &quot;valid&quot; &quot;test@example.com&quot;</span>
 
-  <span class="lead-duration duration">0.119</span>
+  <span class="lead-duration duration">0.113</span>
 
 </div>
 
@@ -312,7 +312,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user login with &quot;P@ssw0rd&quot;</span>
 
-  <span class="lead-duration duration">0.114</span>
+  <span class="lead-duration duration">0.113</span>
 
 </div>
 
@@ -339,7 +339,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user press on login button</span>
 
-  <span class="lead-duration duration">3.317</span>
+  <span class="lead-duration duration">2.865</span>
 
 </div>
 
@@ -366,7 +366,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user login to the system successfully</span>
 
-  <span class="lead-duration duration">2.050</span>
+  <span class="lead-duration duration">12.047</span>
 
 </div>
 
@@ -378,11 +378,40 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.NullPointerException:</a>
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;actualurl&quot; is null
-	at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:46)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-account&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a783f46b0a9dce13cf9168f0b452fab, findElement {using=css selector, value=.ico\-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a783f46b0a9dce13cf9168f0b452fab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:429)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:298)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Org.example.pages.P02_login.successLogin(P02_login.java:30)
+	at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:45)
 	at &#10045;.user login to the system successfully(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F02_Login.feature:10)
 </pre>
       </div>
@@ -425,7 +454,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.431</span>
+  <span class="lead-duration duration">2.730</span>
 
           </div>
 
@@ -456,7 +485,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.432</span>
+  <span class="lead-duration duration">13.942</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
@@ -494,7 +523,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">3.312</span>
+  <span class="lead-duration duration">5.118</span>
 
           </div>
 
@@ -531,7 +560,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user navigates login page</span>
 
-  <span class="lead-duration duration">0.966</span>
+  <span class="lead-duration duration">0.887</span>
 
 </div>
 
@@ -585,7 +614,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user enter valid pass</span>
 
-  <span class="lead-duration duration">0.092</span>
+  <span class="lead-duration duration">0.117</span>
 
 </div>
 
@@ -612,7 +641,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user enter login button</span>
 
-  <span class="lead-duration duration">3.094</span>
+  <span class="lead-duration duration">2.662</span>
 
 </div>
 
@@ -639,7 +668,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user go to dropdown list on the top left of home page</span>
 
-  <span class="lead-duration duration">0.080</span>
+  <span class="lead-duration duration">0.076</span>
 
 </div>
 
@@ -666,7 +695,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user select Euro currency</span>
 
-  <span class="lead-duration duration">10.084</span>
+  <span class="lead-duration duration">10.082</span>
 
 </div>
 
@@ -684,7 +713,7 @@ $(document).ready(function() {
         <pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Euro
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:287)
 	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:190)
@@ -732,7 +761,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.511</span>
+  <span class="lead-duration duration">2.360</span>
 
           </div>
 
@@ -753,7 +782,7 @@ Driver info: driver.version: unknown
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2_4196209235.html">invalid_Login | users could use login functionality to use their accounts</a>
+      <a href="report-feature_2_1623837561.html">search feature</a>
     </div>
 
 
@@ -763,14 +792,14 @@ Driver info: driver.version: unknown
 </div>
 
 
-  <span class="lead-duration duration">3.931</span>
+  <span class="lead-duration duration">13.152</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">user could login with invalid email and password</span>
+  <span class="name">F04=search  | users could search using product name</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -779,7 +808,7 @@ Driver info: driver.version: unknown
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -801,7 +830,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">3.189</span>
+  <span class="lead-duration duration">3.929</span>
 
           </div>
 
@@ -818,7 +847,276 @@ Driver info: driver.version: unknown
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user go to search filed</span>
+
+  <span class="lead-duration duration">0.099</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">tab to write product name</span>
+
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user tab on search button</span>
+
+  <span class="lead-duration duration">2.913</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user go to the product</span>
+
+  <span class="lead-duration duration">10.072</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;https://demo.nopcommerce.com/search?q=book&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d62e6d611d53d00e0fdb753c143a610d, findElement {using=link text, value=https://demo.nopcommerce.com/search?q=book}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54228/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d62e6d611d53d00e0fdb753c143a610d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Org.example.pages.P03_homePage.searchVal(P03_homePage.java:59)
+	at Org.example.stepDefs.D04_searchStepDef.searchVal(D04_searchStepDef.java:31)
+	at &#10045;.user go to the product(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F04_Search.feature:7)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-15" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
+
+  <span class="lead-duration duration">2.360</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3_4196209235.html">invalid_Login | users could use login functionality to use their accounts</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">3.794</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">user could login with invalid email and password</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-17" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
+
+  <span class="lead-duration duration">5.293</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -830,7 +1128,7 @@ Driver info: driver.version: unknown
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -838,7 +1136,7 @@ Driver info: driver.version: unknown
   <span class="keyword indention">Given</span>
   <span class="name">user navigate login page</span>
 
-  <span class="lead-duration duration">0.921</span>
+  <span class="lead-duration duration">0.816</span>
 
 </div>
 
@@ -892,7 +1190,7 @@ Driver info: driver.version: unknown
   <span class="keyword indention">And</span>
   <span class="name">user login with invalid&quot;P@ssw0rd&quot;</span>
 
-  <span class="lead-duration duration">0.110</span>
+  <span class="lead-duration duration">0.099</span>
 
 </div>
 
@@ -919,7 +1217,7 @@ Driver info: driver.version: unknown
   <span class="keyword indention">And</span>
   <span class="name">user presss on login button</span>
 
-  <span class="lead-duration duration">2.739</span>
+  <span class="lead-duration duration">2.722</span>
 
 </div>
 
@@ -946,492 +1244,7 @@ Driver info: driver.version: unknown
   <span class="keyword indention">Then</span>
   <span class="name">user could not login to the system</span>
 
-  <span class="lead-duration duration">0.045</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-14" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
-
-  <span class="lead-duration duration">2.361</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3_3273566277.html">users could register with new accounts</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_4089311534.html">@smoke</a>
-</div>
-
-
-  <span class="lead-duration duration">2.183</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">new user could register with valid data successfully</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-15" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-16" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
-
-  <span class="lead-duration duration">3.143</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user go to register page</span>
-
-  <span class="lead-duration duration">1.030</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user select gender type</span>
-
-  <span class="lead-duration duration">0.089</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter first name &quot;automation&quot;</span>
-
-  <span class="lead-duration duration">0.118</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter last name &quot;tester&quot;</span>
-
-  <span class="lead-duration duration">0.090</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter day of birth</span>
-
-  <span class="lead-duration duration">0.183</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter month of birth</span>
-
-  <span class="lead-duration duration">0.364</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter year of birth</span>
-
-  <span class="lead-duration duration">0.298</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enter email &quot;test@example.com&quot; field</span>
-
-  <span class="lead-duration duration">0.006</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
-          <a>org.openqa.selenium.NoSuchWindowException:</a>
-      </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57cb83e05cf0ce44d88d94d89a8d16dc, findElement {using=id, value=Email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53852/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 57cb83e05cf0ce44d88d94d89a8d16dc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at Org.example.pages.registration.enterEmail(registration.java:67)
-	at Org.example.stepDefs.D01_registerStepDef.Valid_Email(D01_registerStepDef.java:59)
-	at &#10045;.user enter email &quot;test@example.com&quot; field(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/f01-Register.feature:11)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user fills Password field &quot;P@ssw0rd&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user confirm passsword field&quot;P@ssw0rd&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on register button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">success message is displayed</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.042</span>
 
 </div>
 
@@ -1476,7 +1289,455 @@ Session ID: 57cb83e05cf0ce44d88d94d89a8d16dc
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.114</span>
+  <span class="lead-duration duration">2.369</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_4_3273566277.html">users could register with new accounts</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">6.620</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">new user could register with valid data successfully</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-21" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
+
+  <span class="lead-duration duration">3.118</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user go to register page</span>
+
+  <span class="lead-duration duration">0.953</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user select gender type</span>
+
+  <span class="lead-duration duration">0.097</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter first name &quot;automation&quot;</span>
+
+  <span class="lead-duration duration">0.196</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter last name &quot;tester&quot;</span>
+
+  <span class="lead-duration duration">0.196</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter day of birth</span>
+
+  <span class="lead-duration duration">0.239</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter month of birth</span>
+
+  <span class="lead-duration duration">0.374</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter year of birth</span>
+
+  <span class="lead-duration duration">0.428</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter email &quot;test@example.com&quot; field</span>
+
+  <span class="lead-duration duration">0.204</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user fills Password field &quot;P@ssw0rd&quot;</span>
+
+  <span class="lead-duration duration">0.192</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user confirm passsword field&quot;P@ssw0rd&quot;</span>
+
+  <span class="lead-duration duration">0.185</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on register button</span>
+
+  <span class="lead-duration duration">1.513</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">success message is displayed</span>
+
+  <span class="lead-duration duration">2.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-23" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
+
+  <span class="lead-duration duration">2.356</span>
 
           </div>
 

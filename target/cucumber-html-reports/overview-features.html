@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                21,
+                29,
                 3,
-                4,
+                0,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 28) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 32) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,7 +106,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
+                2,
                 3
             ],
             backgroundColor: [
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,7 +153,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
+                   2,
                    3
                ],
                backgroundColor: [
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>20 Jul 2022, 00:00</td>
+      <td>15 Aug 2022, 12:37</td>
     </tr>
   </tbody>
 </table>
@@ -338,7 +338,7 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6553464600">6.553</td>
+        <td class="duration" data-value="16021655300">16.021</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
@@ -355,11 +355,28 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="14432907600">14.432</td>
+        <td class="duration" data-value="13942452000">13.942</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_2_4196209235.html">invalid_Login | users could use login functionality to use their accounts</a></td>
+        <td class="tagname"><a href="report-feature_2_1623837561.html">search feature</a></td>
+
+        <td      class="passed"    >3</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="13152040300">13.152</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_3_4196209235.html">invalid_Login | users could use login functionality to use their accounts</a></td>
 
         <td      class="passed"    >5</td>
         <td >0</td>
@@ -372,58 +389,58 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3931535200">3.931</td>
+        <td class="duration" data-value="3794271700">3.794</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_3_3273566277.html">users could register with new accounts</a></td>
+        <td class="tagname"><a href="report-feature_4_3273566277.html">users could register with new accounts</a></td>
 
-        <td      class="passed"    >7</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >4</td>
+        <td      class="passed"    >12</td>
+        <td >0</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2183994000">2.183</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="6620438400">6.620</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>21</td>
+      <td>29</td>
       <td>3</td>
-      <td>4</td>
       <td>0</td>
       <td>0</td>
-      <td>28</td>
+      <td>0</td>
+      <td>32</td>
 
-      <td>1</td>
+      <td>2</td>
       <td>3</td>
-      <td>4</td>
+      <td>5</td>
 
-      <td class="duration">27.101</td>
-      <td>4</td>
+      <td class="duration">53.530</td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>
-      <td>75.00%</td>
-      <td>10.71%</td>
-      <td>14.29%</td>
+      <td>90.62%</td>
+      <td>9.38%</td>
       <td>0.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>25.00%</td>
-      <td>75.00%</td>
+      <td>40.00%</td>
+      <td>60.00%</td>
       <td></td>
       <td></td>
-      <td>25.00%</td>
+      <td>40.00%</td>
     </tr>
   </tfoot>
 </table>

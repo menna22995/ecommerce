@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>20 Jul 2022, 00:00</td>
+      <td>15 Aug 2022, 12:37</td>
     </tr>
   </tbody>
 </table>
@@ -140,7 +140,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="6553464600">6.553</td>
+          <td class="duration" data-value="16021655300">16.021</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -195,7 +195,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.553</span>
+  <span class="lead-duration duration">16.021</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -233,7 +233,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Org.example.stepDefs.Hooks.open_browser()</span>
 
-  <span class="lead-duration duration">5.170</span>
+  <span class="lead-duration duration">14.360</span>
 
           </div>
 
@@ -270,7 +270,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user go to login page</span>
 
-  <span class="lead-duration duration">0.951</span>
+  <span class="lead-duration duration">0.881</span>
 
 </div>
 
@@ -297,7 +297,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user login with &quot;valid&quot; &quot;test@example.com&quot;</span>
 
-  <span class="lead-duration duration">0.119</span>
+  <span class="lead-duration duration">0.113</span>
 
 </div>
 
@@ -324,7 +324,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user login with &quot;P@ssw0rd&quot;</span>
 
-  <span class="lead-duration duration">0.114</span>
+  <span class="lead-duration duration">0.113</span>
 
 </div>
 
@@ -351,7 +351,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user press on login button</span>
 
-  <span class="lead-duration duration">3.317</span>
+  <span class="lead-duration duration">2.865</span>
 
 </div>
 
@@ -378,7 +378,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user login to the system successfully</span>
 
-  <span class="lead-duration duration">2.050</span>
+  <span class="lead-duration duration">12.047</span>
 
 </div>
 
@@ -390,11 +390,40 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.NullPointerException:</a>
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;actualurl&quot; is null
-	at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:46)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-account&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-0FH6CF0', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a783f46b0a9dce13cf9168f0b452fab, findElement {using=css selector, value=.ico\-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\AA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54128/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a783f46b0a9dce13cf9168f0b452fab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:429)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:298)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:136)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at Org.example.pages.P02_login.successLogin(P02_login.java:30)
+	at Org.example.stepDefs.D02_loginStepDef.successLogin(D02_loginStepDef.java:45)
 	at &#10045;.user login to the system successfully(file:///C:/Users/AA/Documents/NetBeansProjects/EcommerceProject/src/main/resources/featuers/F02_Login.feature:10)
 </pre>
       </div>
@@ -437,7 +466,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">Org.example.stepDefs.Hooks.quit_driver()</span>
 
-  <span class="lead-duration duration">2.431</span>
+  <span class="lead-duration duration">2.730</span>
 
           </div>
 
