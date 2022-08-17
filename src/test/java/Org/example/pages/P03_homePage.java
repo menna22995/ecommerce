@@ -54,7 +54,7 @@ public class P03_homePage {
         return searchBtn;
     }
     public WebElement searchVal() {
-        WebElement searchVal = Hooks.driver.findElement(By.linkText("https://demo.nopcommerce.com/search?q=book"));
+        WebElement searchVal = Hooks.driver.findElement(By.linkText("Apple MacBook Pro 13-inch"));
         return searchVal;
     }
 //        public WebElement hovermouse() {
@@ -101,6 +101,78 @@ public class P03_homePage {
     public  WebElement added(){
         WebElement added=Hooks.driver.findElement(By.linkText("wishlist"));
         return  added;
+    }
+    public  WebElement clickTwittericon(){
+        WebElement clickTwittericon=Hooks.driver.findElement(By.linkText("Twitter"));
+        return  clickTwittericon;
+    }
+    public  WebElement clikTwitterfollow(){
+        WebElement clikTwitterfollow=Hooks.driver.findElement(By.className("r-poiln3"));
+        return  clikTwitterfollow;
+    }
+    public  WebElement clickFacebookicon(){
+        WebElement clickFacebookicon=Hooks.driver.findElement(By.linkText("Facebook"));
+        return  clickFacebookicon;
+    }
+    public  WebElement clikFacebookfollow(){
+        WebElement clikFacebookfollow=Hooks.driver.findElement(By.className("r-poiln3"));
+        return  clikFacebookfollow;
+    }
+    public  WebElement clickrssicon(){
+        WebElement clickrssicon=Hooks.driver.findElement(By.linkText("RSS"));
+        return  clickrssicon;
+    }
+    public  WebElement clikrssfollow(){
+        WebElement clikrssfollow=Hooks.driver.findElement(By.className("r-poiln3"));
+        return  clikrssfollow;
+    }
+
+    public  WebElement clickonbtnnext(){
+        WebElement clickonbtnnext=Hooks.driver.findElement(By.className("nivo-control active"));
+        return  clickonbtnnext;
+    }
+    public  WebElement showenext(){
+        WebElement showenext=Hooks.driver.findElement(By.linkText("https://demo.nopcommerce.com/iphone-6"));
+        return  showenext;
+    }
+
+
+
+    public  WebElement gotoDropDownlist(){
+
+        WebElement gotoDropDownlist=Hooks.driver.findElement(By.id("customerCurrency"));
+        return  gotoDropDownlist;
+    }
+
+    public  WebElement selectCurrSec(){
+        WebElement selectCurrSec=Hooks.driver.findElement(By.id("customerCurrency"));
+        Select dropList= new Select(selectCurrSec);
+        dropList.selectByValue("Euro");
+        return selectCurrSec;
+
+    }
+    public  WebElement selectCurrthird(){
+        WebElement selectCurrthird=Hooks.driver.findElement(By.id("customerCurrency"));
+        Select dropList= new Select(selectCurrthird);
+        dropList.selectByValue("Euro");
+        return selectCurrthird;
+
+    }
+    public  WebElement selectCurrfourth(){
+        WebElement selectCurrfourth=Hooks.driver.findElement(By.id("customerCurrency"));
+        Select dropList= new Select(selectCurrfourth);
+        dropList.selectByValue("Euro");
+        return selectCurrfourth;
+
+    }
+
+    public WebElement searchBTnn() {
+        WebElement searchBtnn = Hooks.driver.findElement(By.className("search-box-button"));
+        return searchBtnn;
+    }
+    public WebElement searchVale() {
+        WebElement searchVale = Hooks.driver.findElement(By.linkText("Science & Faith"));
+        return searchVale;
     }
 
 }

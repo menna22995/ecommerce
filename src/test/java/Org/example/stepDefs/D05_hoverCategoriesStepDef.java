@@ -29,7 +29,7 @@ public class D05_hoverCategoriesStepDef {
     }
  @Then("user navigate to sub category page")
  public void navToCat(){
-        String expectedRes="https://demo.nopcommerce.com/desktops";
+        String expectedRes="https://demo.nopcommerce.com/nokia-lumia-1020 3";
    Boolean ActualRes=  home.navToCat().isDisplayed();
      Assert.assertTrue(ActualRes,expectedRes);
  }

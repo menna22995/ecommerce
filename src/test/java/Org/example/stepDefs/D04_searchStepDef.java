@@ -32,4 +32,23 @@ public class D04_searchStepDef {
       Boolean actualRes= home.searchVal().isDisplayed();
          Assert.assertTrue(actualRes,expetedres);
      }
+    @When("tab to write sku")
+
+    public void writesku(){
+        home.writeName().sendKeys("SCI_FAITH");
+    }
+
+    @And("user tab on search buttonn")
+    public void searchBTnn(){
+        home.searchBTnn().click();
+    }
+    @Then("user go to the products")
+    public void searchVale(){
+        String expetedres="https://demo.nopcommerce.com/search?q=SCI_FAITH";
+        Boolean actualRes= home.searchVale().isDisplayed();
+        Assert.assertTrue(actualRes,expetedres);
+    }
+
+
+
 }

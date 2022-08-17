@@ -54,7 +54,7 @@ public class D03_currenciesStepDef {
 
             home.changecurr().click();
 
-            String actualval = "$1,200.00";
+            String actualval = "€1032.00";
             String expectedval = Hooks.driver.findElement(By.className("price actual-price")).getText();
             Assert.assertTrue(actualval.contains(expectedval));
 
@@ -80,5 +80,46 @@ public class D03_currenciesStepDef {
 //         String actual = Hooks.driver.findElement(By.className("price actual-price")).getText();
 //            Assert.assertTrue(actual.contains(expected));
 //    }
+
+
+
+
+
+
+    @And("user go to dropdown list on the top left")
+    public void  gotoDropDownlist(){
+        home.gotoDropDownlist().click();
+
+    }
+  @Then("user select Euro currency in second product")
+  public  void selectCurrSec() throws InterruptedException {
+
+      home.selectCurrSec().click();
+
+      String actualval = "€1548.00";
+      String expectedval = Hooks.driver.findElement(By.className("price actual-price")).getText();
+      Assert.assertTrue(actualval.contains(expectedval));
+
+  }
+  @Then("user select Euro currency in third product")
+  public  void selectCurrthird() throws InterruptedException {
+
+      home.selectCurrthird().click();
+
+      String actualval = "€210.70";
+      String expectedval = Hooks.driver.findElement(By.className("price actual-price")).getText();
+      Assert.assertTrue(actualval.contains(expectedval));
+
+  }
+    @Then("user select Euro currency in fourth product")
+    public  void selectCurrfourth() throws InterruptedException {
+
+        home.selectCurrfourth().click();
+
+        String actualval = "€21.50";
+        String expectedval = Hooks.driver.findElement(By.className("price actual-price")).getText();
+        Assert.assertTrue(actualval.contains(expectedval));
+
+    }
 
     }
