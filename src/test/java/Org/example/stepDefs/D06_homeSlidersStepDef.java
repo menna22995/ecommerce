@@ -16,7 +16,7 @@ public class D06_homeSlidersStepDef {
     public void showres(){
         Boolean actualres=home.showres().isDisplayed();
         String expectedres="https://demo.nopcommerce.com/";
-        Assert.assertTrue(actualres,expectedres);
+        Assert.assertFalse(actualres,expectedres);
     }
 
 }

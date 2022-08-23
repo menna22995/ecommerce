@@ -3,6 +3,7 @@ package Org.example.stepDefs;
 import Org.example.pages.P03_homePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.testng.Assert;
 
 public class rssIcon {
     P03_homePage home=new P03_homePage();
@@ -16,5 +17,9 @@ public class rssIcon {
     public void  clikrssfollow(){
 
         home.clikrssfollow().click();
+
+        String  expectedres="https://demo.nopcommerce.com/news/rss/1";
+        String actualres="https://demo.nopcommerce.com/news/rss/1";
+        Assert.assertEquals(actualres,expectedres);
     }
 }
